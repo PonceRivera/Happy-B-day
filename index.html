@@ -19,14 +19,14 @@
         <div class="card">
             <div class="header">
                 <span class="pill">Hoy es tu día</span>
-                <h1 class="title">¡Feliz Cumpleaños <span class="highlight">Zayra!</span></h1>
-                <p class="subtitle">Que todos tus deseos se hagan realidad✨</p>
+                <h1 class="title">Feliz Cumpleaños <span class="highlight">Zayra</span></h1>
+                <p class="subtitle">No se que poner aqui</p>
             </div>
 
             <div class="content">
                 <p class="message">
-                    Espero que este año te traiga mucha alegría, amor, éxito y momentos inolvidables.
-                    Eres una persona increíble y te mereces lo mejor del mundo.
+                    Que cumplas muchos mas y que
+                    los niños te saquen canas verdes
                 </p>
                 <div class="gift-icon">🎁</div>
             </div>
@@ -37,8 +37,11 @@
 
     <script>
         const btn = document.getElementById('celebrateBtn');
+        const audio = new Audio('yippee.mp3'); // Asegúrate de renombrar tu archivo a yippee.mp3
 
         function launchConfetti() {
+            audio.play().catch(e => console.log("Audio play failed:", e)); // Reproducir sonido
+
             var duration = 3 * 1000;
             var animationEnd = Date.now() + duration;
             var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
