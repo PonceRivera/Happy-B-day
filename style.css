@@ -111,17 +111,39 @@ button:hover {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px) rotateX(2deg); }
-    50% { transform: translateY(-20px) rotateX(-2deg); }
+
+    0%,
+    100% {
+        transform: translateY(0px) rotateX(2deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotateX(-2deg);
+    }
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 @media (max-width: 640px) {
-    .title { font-size: 2.5rem; }
-    .container { padding: 1rem; }
-    .card { padding: 2rem 1.5rem; }
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .card {
+        padding: 2rem 1.5rem;
+    }
 }
